@@ -8,6 +8,16 @@ This repo helps you understand the difference between **Deployment** and **State
 
 ---
 
+## 📖 Introduction
+
+### What is a Deployment?
+A **Deployment** in Kubernetes is a resource object designed to manage stateless applications. It ensures that a specified number of identical Pods are running at all times. If a Pod fails, the Deployment automatically replaces it with a new one, making it ideal for applications where Pods are interchangeable and don’t need to maintain individual state or identity—like web servers or API services.
+
+### What is a StatefulSet?
+A **StatefulSet** is a Kubernetes resource tailored for stateful applications. Unlike Deployments, it assigns a unique, stable identity to each Pod (e.g., `mysql-0`, `mysql-1`) and ensures they are created and terminated in a specific order. It’s perfect for apps that require persistent storage or need to maintain state, such as databases or distributed systems like Kafka.
+
+---
+
 ## 🔍 Basic Difference
 
 | Feature            | Deployment                     | StatefulSet                               |
@@ -106,14 +116,6 @@ spec:
 
 ---
 
-## 📸 Diagram
-
-Below is a visual diagram to help you quickly understand the key differences.
-
-![Deployment vs StatefulSet](./Deployment-vs-StatefulSet-diagram.png)
-
-> 📝 Tip: Diagrams help you quickly remember the difference during interviews or revision.
-
 ---
 
 ## ✅ Summary
@@ -123,6 +125,3 @@ Below is a visual diagram to help you quickly understand the key differences.
 - Know the YAML structure for both – it's a key DevOps skill!
 
 ---
-
-Happy learning! 🚀  
-Built with ❤️ by Buddy
