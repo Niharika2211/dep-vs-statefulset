@@ -1,8 +1,3 @@
-Of course, Buddy! Here's your complete `README.md` content ready to copy and paste into your GitHub repo:
-
----
-
-```markdown
 # Kubernetes: Deployment vs StatefulSet
 
 This repo helps you understand the difference between **Deployment** and **StatefulSet** in Kubernetes using:
@@ -128,3 +123,6 @@ Below is a visual diagram to help you quickly understand the key differences.
 - Know the YAML structure for both – it's a key DevOps skill!
 
 ---
+
+Happy learning! 🚀  
+Built with ❤️ by Buddy
